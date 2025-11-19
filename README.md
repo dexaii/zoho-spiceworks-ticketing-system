@@ -45,17 +45,17 @@ The repository is organized as follows:
 * **Automatic Ticket Creation:** Configured Spiceworks to automatically generate new helpdesk tickets from each incoming email to the support address
 * **SLA and Ticket Workflow:** Implemented a basic SLA for response times and set up workflow rules. For example, tickets are tagged and prioritized based on keywords, and unresolved tickets auto-escalate after a certain time.
 # Documentation Index
-Process documentation is available in /docs directory:
-* **Project overview:** (docs/01-project-overview.md), high-level summary of the project scope
-* **Domain setup:** (docs/02-domain-setup.md), instructions for configuring the domain and DNS records
-* **Zoho Mail server setup:** (docs/02-domain-setup.md), details on setting up the Zoho Mail server, verifing domain, user and group account creation + email authentication triad
-* **Spiceworks Cloud helpdesk integration:**: (04-spiceworkcloud-integration.md), guidance on connecting Spiceworks to email system and setting uo ticketing rules
-* **Lessons learned:** (docs/05-lessons-learned.md), challenges encountered and how they were resolved
+Process documentation is available in `/docs` directory:
+* **Project overview:** `(docs/01-project-overview.md)` - high-level summary of the project scope
+* **Domain setup:** `(docs/02-domain-setup.md)` - instructions for configuring the domain and DNS records
+* **Zoho Mail server setup:** `(docs/02-domain-setup.md)` - details on setting up the Zoho Mail server, verifing domain, user and group account creation + email authentication triad
+* **Spiceworks Cloud helpdesk integration:**: `(04-spiceworkcloud-integration.md)` - guidance on connecting Spiceworks to email system and setting up ticketing rules
+* **Lessons learned:** `(docs/05-lessons-learned.md)` - challenges encountered and how they were resolved
 # Screenshots
-Screenshots of the configuration steps are provided in the screenshots/ directory. These images devided into three categories:
-* Domain & DNS settings (TXT recordsm MX, SPF, DKIM, DMARC )
-* Zoho Mail service settings (domain verification status, mailbox admin console)
-* Spiceworks Cloud Helpdesk settings (email integration configuration, ticketing workflow)
+Configuration screenshots are stored under `docs/screenshots/` and devided into:
+* **Domain & DNS settings:** TXT records, MX routing, SPF, DKIM, DMARC
+* **Zoho Mail:** Domain verification, mailbox, admin console, and security settings
+* **Spiceworks Cloud Helpdesk:** Email integration settings, example tickets, and workflow / SLA configuration
 
 # Technologies Used
 * **Domain Registrar & DNS Provider:** Used a custom domain and a DNS hosting service to manage DNS records (including TXT, MX, SPF, DKIM, DMARC) and interconnect to Zoho Mail services
