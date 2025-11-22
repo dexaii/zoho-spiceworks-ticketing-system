@@ -28,7 +28,7 @@ MX(Mail Exchange) records direct email for your domain to the mail server. By se
 
 **1.** Add the following MX records to your DNS settings:
 
-![alt text](MX-records.png)
+![MX-record](./screenshots/domain/MX-records.png)
 * Where is the `Priority` is a Zoho’s mail servers for the default data center. The priority values ensure mail is tried at the primary server first (priority 10) other two are backups
 
 **2.** Make sure to delete all MX records not related to Zoho Mail
@@ -40,7 +40,7 @@ SPF record is one of `email authentication triad` email authentication protocols
 
 **1.** Add the following TXT record to your DNS settings:
 
-![alt text](SPF-record.png)
+![SPF-record](./screenshots/domain/SPF-record.png)
 
 **2.** Verify SPF record on Zoho Mail side
 
@@ -49,7 +49,7 @@ DKIM record is one of `email authentication triad` email authentication protocol
 
 **1.** Add the following record to your DNS settings:
 
-![alt text](DKIM-records.png)
+![DKIM-record](./screenshots/domain/DKIM-records.png)
 
 **2.** Verify SPF record on Zoho Mail side
 
@@ -60,7 +60,8 @@ DKIM record is one of `email authentication triad` email authentication protocol
 * Login to your DNS settings and create a TXT record
 * Enter TXT record_dmarc.<yourdomain.com>
 * Enter a TXT record value "v=DMARC1;  `p=none` rua=mailto:admin@<yourdomain.com>
-![alt text](DMARC-record.png)
+
+![DMARC-record](./screenshots/domain/DMARC-record.png)
 
 **2.** Where `p` is  a policy state phase:
 * Where Phase 1  `p=none` - Accept all emails (Recommended)
